@@ -2,7 +2,6 @@
 {
     margin:0;
     padding: 0;
-    background-color: aqua;
 }
 
 body{
@@ -89,19 +88,23 @@ body{
     }
 
 }
-.emoticon{
-    margin: 500px 500px;
 
+
+
+.emoji{
+    padding: 1rem;
+    background-color: red;
+    margin: 250px 300px ;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.head
+{
+    border-radius: 50%;
+    background-color: #ffc83d;
     width: 250px;
     height: 250px;
-    background-color: #fec54b;
-    border-radius: 50%;
-    display: flex;
-    flex-direction:column ;
-}
-.eyes{
-
-}
-.mouth{
-    background-color: aquamarine;
+    overflow: hidden;
+    position: absolute;
 }
