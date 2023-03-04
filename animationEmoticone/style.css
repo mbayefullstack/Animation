@@ -2,6 +2,7 @@
 {
     margin:0;
     padding: 0;
+    background-color: aqua;
 }
 
 body{
@@ -25,6 +26,13 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     
+    
+}
+.box1
+{
+    width: 125px;
+    height: 125px;
+    
 }
 .box1::before
 {
@@ -38,9 +46,12 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
+    border-right-color:transparent ;
+    
     animation-direction: normal;
     top: 29%;
 }
+
 
 
 @keyframes animationEmoticone {
@@ -77,4 +88,20 @@ body{
         margin-left: 100%;
     }
 
+}
+.emoticon{
+    margin: 500px 500px;
+
+    width: 250px;
+    height: 250px;
+    background-color: #fec54b;
+    border-radius: 50%;
+    display: flex;
+    flex-direction:column ;
+}
+.eyes{
+
+}
+.mouth{
+    background-color: aquamarine;
 }
