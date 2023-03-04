@@ -2,3 +2,44 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(43, 37, 37) ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 30%;
+    background-color: rgb(43, 37, 37);  
+    border: 3px solid white; 
+    color: aliceblue;
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.box::before{
+    content: "";
+    background-color: crimson;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%,110%);
+    transition: transform .5s;
+}
+
+.box:hover:before{
+    transform: translate(0,0);
+}
+p{
+    z-index: -1;
+    position: absolute;
+}
