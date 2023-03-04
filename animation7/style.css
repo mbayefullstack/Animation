@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #292f2f;;
+    
+}
+.box{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    background-color: #292f2f;
+    font-size: 3rem;
+    border: #ffffff solid 4px;
+    color: #ffffff; 
+    perspective: 1000px;
+}
+.box::before{
+    transform: rotateZ(90deg);
+    transition: transform 2s;
+}
+.box:hover::before{
+    transform: rotateZ(1deg);
+}
